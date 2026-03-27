@@ -1,0 +1,17 @@
+[24-Sep-2025 19:38:07 Asia/Ho_Chi_Minh] PHP Fatal error:  Declaration of Monolog\Logger::emergency(Stringable|string $message, array $context = []): void must be compatible with PsrExt\Log\LoggerInterface::emergency($message, array $context = []) in /home/bagxidvn/public_html/vendor/monolog/monolog/src/Monolog/Logger.php on line 683
+[24-Sep-2025 19:38:07 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "Monolog\Logger" not found in /home/bagxidvn/public_html/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php:60
+Stack trace:
+#0 /home/bagxidvn/public_html/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php(38): Monolog\Handler\AbstractHandler->setLevel()
+#1 /home/bagxidvn/public_html/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php(52): Monolog\Handler\AbstractHandler->__construct()
+#2 /home/bagxidvn/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(207): Monolog\Handler\StreamHandler->__construct()
+#3 /home/bagxidvn/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(161): Illuminate\Log\LogManager->createEmergencyLogger()
+#4 /home/bagxidvn/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(126): Illuminate\Log\LogManager->get()
+#5 /home/bagxidvn/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\LogManager->driver()
+#6 /home/bagxidvn/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /home/bagxidvn/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /home/bagxidvn/public_html/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php(46): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /home/bagxidvn/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(186): NunoMaduro\Collision\Adapters\Laravel\ExceptionHandler->report()
+#10 /home/bagxidvn/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#11 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():257}()
+#12 {main}
+  thrown in /home/bagxidvn/public_html/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php on line 60
